@@ -1,0 +1,10 @@
+/home/javierdev/Escritorio/JavierDevMañana/C#/TallerS4/BibliotecaDigital/obj/Debug/net8.0/BibliotecaDigital.csproj.AssemblyReference.cache
+/home/javierdev/Escritorio/JavierDevMañana/C#/TallerS4/BibliotecaDigital/obj/Debug/net8.0/rpswa.dswa.cache.json
+/home/javierdev/Escritorio/JavierDevMañana/C#/TallerS4/BibliotecaDigital/obj/Debug/net8.0/BibliotecaDigital.GeneratedMSBuildEditorConfig.editorconfig
+/home/javierdev/Escritorio/JavierDevMañana/C#/TallerS4/BibliotecaDigital/obj/Debug/net8.0/BibliotecaDigital.AssemblyInfoInputs.cache
+/home/javierdev/Escritorio/JavierDevMañana/C#/TallerS4/BibliotecaDigital/obj/Debug/net8.0/BibliotecaDigital.AssemblyInfo.cs
+/home/javierdev/Escritorio/JavierDevMañana/C#/TallerS4/BibliotecaDigital/obj/Debug/net8.0/BibliotecaDigital.csproj.CoreCompileInputs.cache
+/home/javierdev/Escritorio/JavierDevMañana/C#/TallerS4/BibliotecaDigital/obj/Debug/net8.0/BibliotecaDigital.MvcApplicationPartsAssemblyInfo.cache
+/home/javierdev/Escritorio/JavierDevMañana/C#/TallerS4/BibliotecaDigital/obj/Debug/net8.0/BibliotecaDigital.RazorAssemblyInfo.cache
+/home/javierdev/Escritorio/JavierDevMañana/C#/TallerS4/BibliotecaDigital/obj/Debug/net8.0/BibliotecaDigital.RazorAssemblyInfo.cs
+/home/javierdev/Escritorio/JavierDevMañana/C#/TallerS4/BibliotecaDigital/obj/Debug/net8.0/BibliotecaDigital.sourcelink.json
