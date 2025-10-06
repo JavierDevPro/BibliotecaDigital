@@ -1,0 +1,25 @@
+@{
+    var rows = (IEnumerable<dynamic>)ViewBag.Result ?? Enumerable.Empty<dynamic>();
+}
+<h2>Préstamos vigentes por libro</h2>
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        <th>Id Préstamo</th>
+        <th>Usuario</th>
+        <th>Libro</th>
+        <th>Fecha Devolución</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var r in rows)
+    {
+        <tr>
+            <td>@r.IdBorrow</td>
+            <td>@r.Usuario</td>
+            <td>@r.Libro</td>
+            <td>@r.ReturnDate</td>
+        </tr>
+    }
+    </tbody>
+ </table>

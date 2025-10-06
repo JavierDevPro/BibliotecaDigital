@@ -32,6 +32,18 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Docs/TalleresRiwi/TallerS4/BibliotecaDigital/Views/Borrow/CurrentByBook.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9ycm93XEN1cnJlbnRCeUJvb2suY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Docs/TalleresRiwi/TallerS4/BibliotecaDigital/Views/Borrow/HistoryByUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9ycm93XEhpc3RvcnlCeVVzZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Docs/TalleresRiwi/TallerS4/BibliotecaDigital/Views/Borrow/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9ycm93XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Docs/TalleresRiwi/TallerS4/BibliotecaDigital/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
