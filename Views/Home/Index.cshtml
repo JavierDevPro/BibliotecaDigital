@@ -1,8 +1,41 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+@{
+    ViewData["Title"] = "Dashboard";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="container py-4">
+    <h1 class="mb-4">Biblioteca Digital</h1>
+    <div class="row g-3">
+        <div class="col-md-4">
+            <div class="card h-100">
+                <div class="card-body d-grid gap-2">
+                    <h5 class="card-title">Usuarios</h5>
+                    <a class="btn btn-primary" asp-controller="User" asp-action="Index">Gestionar Usuarios</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100">
+                <div class="card-body d-grid gap-2">
+                    <h5 class="card-title">Libros</h5>
+                    <a class="btn btn-primary" asp-controller="Book" asp-action="Index">Gestionar Libros</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100">
+                <div class="card-body d-grid gap-2">
+                    <h5 class="card-title">Préstamos</h5>
+                    <a class="btn btn-primary" asp-controller="Borrow" asp-action="Index">Gestionar Préstamos</a>
+                    <form class="d-flex gap-2" asp-controller="Borrow" asp-action="HistoryByUser" method="get">
+                        <input type="number" class="form-control" name="userId" placeholder="Id Usuario" min="1" required>
+                        <button class="btn btn-outline-primary" type="submit">Historial</button>
+                    </form>
+                    <form class="d-flex gap-2" asp-controller="Borrow" asp-action="CurrentByBook" method="get">
+                        <input type="number" class="form-control" name="bookId" placeholder="Id Libro" min="1" required>
+                        <button class="btn btn-outline-secondary" type="submit">Vigentes</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

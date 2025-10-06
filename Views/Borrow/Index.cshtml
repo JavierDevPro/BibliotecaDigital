@@ -1,4 +1,7 @@
 @model IEnumerable<BibliotecaDigital.Models.Borrow>
+@{
+    var today = DateOnly.FromDateTime(DateTime.Today);
+}
 <div class="row">
     <div class="col-md-9">
         <h2>Préstamos</h2>
@@ -21,7 +24,14 @@
                     <td>@br.book?.Title</td>
                     <td>@br.ReturnDate</td>
                     <td>
-                        <a class="btn btn-sm btn-outline-success" asp-action="Return" asp-route-id="@br.IdBorrow">Devolver</a>
+                        @if (br.ReturnDate >= today)
+                        {
+                            <a class="btn btn-sm btn-outline-success" asp-action="Return" asp-route-id="@br.IdBorrow">Devolver</a>
+                        }
+                        else
+                        {
+                            <span class="badge bg-secondary">Devuelto</span>
+                        }
                     </td>
                 </tr>
             }
@@ -74,6 +84,20 @@
                     <hr>
                     <button type="submit" class="btn btn-primary w-100">Registrar préstamo</button>
                 </form>
+                <hr>
+                <h6>Consultas rápidas</h6>
+                <form asp-action="HistoryByUser" method="get" class="d-flex gap-2">
+                    <input type="number" class="form-control" name="userId" placeholder="Id Usuario" min="1" required>
+                    <button type="submit" class="btn btn-outline-primary">Historial</button>
+                </form>
+                <form asp-action="CurrentByBook" method="get" class="d-flex gap-2 mt-2">
+                    <input type="number" class="form-control" name="bookId" placeholder="Id Libro" min="1" required>
+                    <button type="submit" class="btn btn-outline-secondary">Vigentes</button>
+                </form>
+                <div class="mt-3 d-grid gap-2">
+                    <a class="btn btn-light" asp-controller="User" asp-action="Index">Usuarios</a>
+                    <a class="btn btn-light" asp-controller="Book" asp-action="Index">Libros</a>
+                </div>
             </div>
         </div>
     </div>

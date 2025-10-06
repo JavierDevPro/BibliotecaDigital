@@ -97,9 +97,16 @@ public class BorrowController : Controller, ICrud<Borrow>
             TempData["Error"] = "Libro no encontrado";
             return RedirectToAction(nameof(ListAll));
         }
+        var today = DateOnly.FromDateTime(DateTime.Today);
+        // Evitar devoluciones múltiples: solo si aún está activo (fecha de devolución hoy o futura)
+        if (borrow.ReturnDate < today)
+        {
+            TempData["Error"] = "Este préstamo ya fue devuelto";
+            return RedirectToAction(nameof(ListAll));
+        }
+
         book.StockAvailable += 1;
         // Marcar como devuelto estableciendo la fecha de devolución al pasado
-        var today = DateOnly.FromDateTime(DateTime.Today);
         borrow.ReturnDate = today.AddDays(-1);
         await _context.SaveChangesAsync();
         TempData["Success"] = "Libro devuelto exitosamente";
